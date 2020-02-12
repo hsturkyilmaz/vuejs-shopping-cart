@@ -29,6 +29,10 @@
           <a href="#" v-on:click="removeFromCart(index)">Delete</a>
           <a href="#" class="secondary" v-on:click="saveForLater(index)">Save for later</a>
         </div>
+        <p class="price">${{item.price}}</p>
+      </div>
+      <div class="subtotal">
+        Subtotal ({{cart.length}} items): <span class="price">${{cartTotal}}</span>
       </div>
     </div>
 
@@ -48,6 +52,7 @@
           <a href="#" v-on:click="removeFromSavedList(index)">Delete</a>
           <a href="#" class="secondary" v-on:click="moveToCart(index)">Move to cart</a>
         </div>
+        <p class="price">${{item.price}}</p>
       </div>
     </div>
   </div>

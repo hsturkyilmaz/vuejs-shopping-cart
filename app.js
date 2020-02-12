@@ -24,6 +24,15 @@ window.addEventListener('load', () => {
           this.cart.push(item[0]);
         }
       },
+      computed: {
+        cartTotal() {
+          let total = 0;
+          this.cart.forEach((item) => {
+            total += parseFloat(item.price, 10);
+          });
+          return total.toFixed(2);
+        }
+      },
     created() {
       fetch('http://127.0.0.1:5500/data.json')
       .then((res) => { return res.json() })
@@ -35,5 +44,3 @@ window.addEventListener('load', () => {
     }
   })
 })
-
-// TEST

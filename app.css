@@ -74,4 +74,20 @@ a.secondary {
   border-left: 1px solid #CCC;
 }
 
-/* TEST */
+.price {
+  font-size: 1.2em;
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+span.price {
+  margin: 0;
+}
+
+.subtotal {
+  font-size: 1.2em;
+  font-weight: bold;
+  float: right;
+}
